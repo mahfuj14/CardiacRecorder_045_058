@@ -49,7 +49,7 @@ You can contribute if you want!
 
 ## Documentation
 
-The Documentation is for to clearup the concepts about the app and the brief discussion of development tools and methods. Click [Here!](https://linktodocumentation)
+The Documentation is for to clearup the concepts about the app and the brief discussion of development tools and methods. Click [Here!](https://mahfuj14.github.io/CardiacRecorder_045_058/)
 
 
 ## License
