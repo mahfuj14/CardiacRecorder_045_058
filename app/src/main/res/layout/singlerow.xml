@@ -20,6 +20,12 @@
         android:background="#ff4545"
         >
 
+        <ImageView
+            android:id="@+id/status"
+            android:layout_width="40dp"
+            android:layout_height="27dp"
+            app:srcCompat="@drawable/bad" />
+
         <TextView
             android:id="@+id/dateTime"
             android:layout_width="wrap_content"
@@ -34,6 +40,7 @@
             android:layout_width="match_parent"
             android:layout_height="wrap_content"
             android:layout_below="@id/dateTime"
+            android:id="@+id/LinearLayout1"
             android:layout_marginStart="6dp"
             android:layout_marginTop="6dp"
             android:layout_marginEnd="6dp"
@@ -69,6 +76,30 @@
                 android:textColor="@color/white"
                 android:textSize="17sp" />
         </LinearLayout>
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_below="@id/LinearLayout1">
+            <Button
+                android:layout_width="175dp"
+                android:layout_height="wrap_content"
+                android:id="@+id/edit"
+                android:paddingLeft="24dp"
+                android:text="Edit"
+                android:paddingRight="24dp"></Button>
+            <Button
+                android:layout_width="175dp"
+                android:layout_height="wrap_content"
+                android:id="@+id/deleteList"
+                android:text="Delete"
+                android:paddingLeft="24dp"
+                android:paddingRight="24dp"></Button>
+
+        </LinearLayout>
+
+
     </RelativeLayout>
+
+
 
 </androidx.cardview.widget.CardView>

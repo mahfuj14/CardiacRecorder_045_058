@@ -2,35 +2,72 @@ package com.example.sqlitecrud;
 
 public class model
 {
-  String sys,dias,hr;
+  int id;
+  String sys,dias,hr,comment,date,time;
 
-    public model(String sys, String dias, String hr) {
-        this.sys = sys;
-        this.dias = dias;
-        this.hr = hr;
-    }
+  public model(int id, String sys, String dias, String hr, String comment, String date, String time) {
+    this.id = id;
+    this.sys = sys;
+    this.dias = dias;
+    this.hr = hr;
+    this.comment = comment;
+    this.date = date;
+    this.time = time;
+  }
 
-    public String getSys() {
-        return sys;
-    }
+  public int getId() {
+    return id;
+  }
 
-    public void setSys(String sys) {
-        this.sys = sys;
-    }
+  public void setId(int id) {
+    this.id = id;
+  }
 
-    public String getDias() {
-        return dias;
-    }
+  public String getSys() {
+    return sys;
+  }
 
-    public void setDias(String dias) {
-        this.dias = dias;
-    }
+  public void setSys(String sys) {
+    this.sys = sys;
+  }
 
-    public String getHr() {
-        return hr;
-    }
+  public String getDias() {
+    return dias;
+  }
 
-    public void setHr(String hr) {
-        this.hr = hr;
-    }
+  public void setDias(String dias) {
+    this.dias = dias;
+  }
+
+  public String getHr() {
+    return hr;
+  }
+
+  public void setHr(String hr) {
+    this.hr = hr;
+  }
+
+  public String getComment() {
+    return comment;
+  }
+
+  public void setComment(String comment) {
+    this.comment = comment;
+  }
+
+  public String getDate() {
+    return date;
+  }
+
+  public void setDate(String date) {
+    this.date = date;
+  }
+
+  public String getTime() {
+    return time;
+  }
+
+  public void setTime(String time) {
+    this.time = time;
+  }
 }

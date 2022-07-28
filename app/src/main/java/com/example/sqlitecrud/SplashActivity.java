@@ -7,12 +7,19 @@ import android.os.Bundle;
 import android.os.Handler;
 import android.view.Menu;
 
+/**
+ * This is splash screen activity
+ */
 public class SplashActivity extends AppCompatActivity {
 
 
         private final int SPLASH_DISPLAY_LENGTH = 1000;
 
-        @Override
+    /**
+     * This class represents the opening of the app
+     * @param icicle
+     */
+    @Override
         public void onCreate(Bundle icicle) {
             super.onCreate(icicle);
             setContentView(R.layout.activity_splash);

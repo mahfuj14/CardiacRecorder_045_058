@@ -5,7 +5,7 @@
     android:layout_width="match_parent"
     android:layout_height="match_parent"
     android:background="#fffbfb"
-    tools:context=".MainActivity">
+    tools:context=".update">
 
     <ImageView
         android:id="@+id/imageView"
@@ -48,25 +48,24 @@
         app:layout_constraintVertical_bias="0.746">
 
         <com.google.android.material.textfield.TextInputLayout
-            android:id="@+id/sysPress"
+            android:id="@+id/upSYs"
             style="@style/Widget.MaterialComponents.TextInputLayout.OutlinedBox"
 
             android:layout_width="match_parent"
             android:layout_height="wrap_content"
             android:layout_margin="10dp">
 
-            <com.google.android.material.textfield.TextInputLayout
-
+            <com.google.android.material.textfield.TextInputEditText
                 android:layout_width="match_parent"
                 android:layout_height="wrap_content"
 
                 android:hint="Systolic Pressure"
-                android:inputType="number"
+                android:inputType="text"
                 android:textSize="20sp" />
         </com.google.android.material.textfield.TextInputLayout>
 
         <com.google.android.material.textfield.TextInputLayout
-            android:id="@+id/diasPress"
+            android:id="@+id/updias"
             style="@style/Widget.MaterialComponents.TextInputLayout.OutlinedBox"
             android:layout_width="match_parent"
             android:layout_height="wrap_content"
@@ -76,13 +75,13 @@
                 android:layout_width="match_parent"
                 android:layout_height="wrap_content"
                 android:hint="Diastolic Pressure"
-                android:inputType="number"
+                android:inputType="text"
                 android:textColor="@android:color/black"
                 android:textSize="20sp" />
         </com.google.android.material.textfield.TextInputLayout>
 
         <com.google.android.material.textfield.TextInputLayout
-            android:id="@+id/hrtRate"
+            android:id="@+id/uphrtRate"
             style="@style/Widget.MaterialComponents.TextInputLayout.OutlinedBox"
             android:layout_width="match_parent"
             android:layout_height="wrap_content"
@@ -92,13 +91,13 @@
                 android:layout_width="match_parent"
                 android:layout_height="wrap_content"
                 android:hint="Heart Rate"
-                android:inputType="number"
+                android:inputType="textEmailAddress"
                 android:textColor="@android:color/black"
                 android:textSize="20sp" />
         </com.google.android.material.textfield.TextInputLayout>
 
         <com.google.android.material.textfield.TextInputLayout
-            android:id="@+id/comment"
+            android:id="@+id/upcomment"
             style="@style/Widget.MaterialComponents.TextInputLayout.OutlinedBox"
             android:layout_width="match_parent"
             android:layout_height="wrap_content"
@@ -114,13 +113,13 @@
         </com.google.android.material.textfield.TextInputLayout>
 
         <androidx.appcompat.widget.AppCompatButton
-            android:id="@+id/sbmt_add"
+            android:id="@+id/sbmt_up"
             android:layout_width="292dp"
             android:layout_height="62dp"
             android:layout_gravity="center_horizontal"
             android:layout_marginTop="10dp"
             android:background="@color/red1"
-            android:text="ADD"
+            android:text="EDIT"
             android:textColor="#fff"
             android:textSize="20sp" />
 
