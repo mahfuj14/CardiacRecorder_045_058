@@ -58,9 +58,14 @@ public class fetchdata extends AppCompatActivity {
         mgr=new dbmanager(this);
         while(cursor.moveToNext())
         {
+
+        }
+        while(cursor.moveToPrevious())
+        {
             model obj=new model(cursor.getInt(0),cursor.getString(1),cursor.getString(2),cursor.getString(3),cursor.getString(4),cursor.getString(5),cursor.getString(6));
             dataholder.add(obj);
         }
+
         SQLiteDatabase sqLiteDatabase=mgr.getReadableDatabase();
         myadapter adapter=new myadapter(getApplicationContext(),sqLiteDatabase,dataholder);
         recyclerView.setAdapter(adapter);

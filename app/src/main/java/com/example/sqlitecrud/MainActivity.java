@@ -67,6 +67,9 @@ public class MainActivity extends AppCompatActivity
        String s="Failed";
        if(res!=-1)s="Successfull";
        Toast.makeText(getApplicationContext(),s,Toast.LENGTH_SHORT).show();
+       Intent intent=new Intent(MainActivity.this,fetchdata.class);
+       startActivity(intent);
+       finish();
 
 
     }
