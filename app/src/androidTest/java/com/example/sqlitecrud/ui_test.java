@@ -45,7 +45,7 @@ public class ui_test {
         SystemClock.sleep(3000);
         onView(withId(R.id.sysPress)).perform(click(), ViewActions.typeText("110"), pressImeActionButton());
         onView(withId(R.id.diasPress)).perform(click(), ViewActions.typeText("70"), pressImeActionButton());
-        onView(withId(R.id.hrtRate)).perform(click(), ViewActions.typeText("65"), pressImeActionButton());
+        onView(withId(R.id.hrtRate)).perform(click(), ViewActions.typeText("68"), pressImeActionButton());
         onView(withId(R.id.cmnt)).perform(click(), ViewActions.typeText("Good"), pressImeActionButton());
         onView(withId(R.id.sbmt_add)).perform(click());
         SystemClock.sleep(4000);
