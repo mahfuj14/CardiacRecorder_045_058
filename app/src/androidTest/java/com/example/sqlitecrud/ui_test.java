@@ -42,7 +42,7 @@ public class ui_test {
     @Test
     public void insertItem() {
         onView(withId(R.id.fbtn)).perform(click());
-        SystemClock.sleep(4000);
+        SystemClock.sleep(3000);
         onView(withId(R.id.sysPress)).perform(click(), ViewActions.typeText("110"), pressImeActionButton());
         onView(withId(R.id.diasPress)).perform(click(), ViewActions.typeText("70"), pressImeActionButton());
         onView(withId(R.id.hrtRate)).perform(click(), ViewActions.typeText("65"), pressImeActionButton());
