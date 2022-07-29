@@ -86,6 +86,7 @@
                 android:id="@+id/edit"
                 android:paddingLeft="24dp"
                 android:text="Edit"
+                android:background="@drawable/buttonshape"
                 android:paddingRight="24dp"></Button>
             <Button
                 android:layout_width="175dp"
@@ -93,6 +94,7 @@
                 android:id="@+id/deleteList"
                 android:text="Delete"
                 android:paddingLeft="24dp"
+                android:background="@drawable/buttonshape"
                 android:paddingRight="24dp"></Button>
 
         </LinearLayout>

@@ -92,20 +92,20 @@ public class myadapter extends RecyclerView.Adapter<myadapter.myviewholder>
             public void onClick(View view) {
 
 
-                               dbmanager mgr=new dbmanager(context);
-                                String Table_name="Tbl_contact";
-                                SQLiteDatabase db=mgr.getReadableDatabase();
-                                long rec=db.delete(Table_name,"id="+md.getId(),null);
-                                if(rec!=-1)
-                                {
-                                    Toast.makeText(context,"Delete Successfully", Toast.LENGTH_SHORT).show();
-                                    dataholder.remove(holder.getAdapterPosition());
-                                    notifyDataSetChanged();
-                                }
-                                else
-                                {
-                                    Toast.makeText(context,"Failed", Toast.LENGTH_SHORT).show();
-                                }
+                dbmanager mgr=new dbmanager(context);
+                String Table_name="Tbl_contact";
+                SQLiteDatabase db=mgr.getReadableDatabase();
+                long rec=db.delete(Table_name,"id="+md.getId(),null);
+                if(rec!=-1)
+                   {
+                       Toast.makeText(context,"Delete Successfully", Toast.LENGTH_SHORT).show();
+                       dataholder.remove(holder.getAdapterPosition());
+                       notifyDataSetChanged();
+                   }
+                else
+                {
+                    Toast.makeText(context,"Failed", Toast.LENGTH_SHORT).show();
+                }
 
             }
         });
