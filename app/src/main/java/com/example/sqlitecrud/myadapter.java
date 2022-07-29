@@ -57,6 +57,7 @@ public class myadapter extends RecyclerView.Adapter<myadapter.myviewholder>
         holder.sysPress.setText("SysPress\n"+md.getSys());
         holder.diasPress.setText("DiasPress\n"+md.getDias());
         holder.heartRate.setText("HeartRate\n"+md.getHr());
+        holder.comment.setText((md.getComment()));
         holder.dataTime.setText("DateTime "+CurrentDate+"  "+CurrentTime);
 
         int  x=Integer.parseInt(md.getSys());
@@ -121,7 +122,7 @@ public class myadapter extends RecyclerView.Adapter<myadapter.myviewholder>
      */
     class myviewholder extends RecyclerView.ViewHolder
     {
-        TextView sysPress,diasPress,heartRate,dataTime;
+        TextView sysPress,diasPress,heartRate,dataTime,comment;
         Button edit,delete;
         ImageView img;
         public myviewholder(@NonNull View itemView)
@@ -131,6 +132,7 @@ public class myadapter extends RecyclerView.Adapter<myadapter.myviewholder>
             diasPress=(TextView)itemView.findViewById(R.id.diastolic);
             heartRate=(TextView)itemView.findViewById(R.id.heartRate);
             dataTime=(TextView)itemView.findViewById(R.id.dateTime);
+            comment=(TextView)itemView.findViewById(R.id.commnt);
             edit=(Button)itemView.findViewById(R.id.edit);
             delete=(Button) itemView.findViewById(R.id.deleteList);
             img=(ImageView) itemView.findViewById(R.id.status);
