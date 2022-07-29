@@ -74,7 +74,7 @@ public class ui_test {
     {
         SystemClock.sleep(4000);
         onView(withId(R.id.deleteList)).perform(click());
-        SystemClock.sleep(4000);
+        SystemClock.sleep(5000);
     }
 
 }
