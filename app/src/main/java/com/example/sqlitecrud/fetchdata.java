@@ -9,6 +9,7 @@ import android.database.Cursor;
 import android.database.sqlite.SQLiteDatabase;
 import android.os.Bundle;
 import android.view.View;
+import android.widget.Button;
 
 import com.google.android.material.floatingactionbutton.FloatingActionButton;
 
@@ -23,6 +24,8 @@ public class fetchdata extends AppCompatActivity {
     FloatingActionButton fb;
     ArrayList<model> dataholder;
     dbmanager mgr;
+
+    Button btn;
 
     /**
      * This function shows data in recyclerview
@@ -41,9 +44,13 @@ public class fetchdata extends AppCompatActivity {
         fb.setOnClickListener(new View.OnClickListener() {
             @Override
             public void onClick(View view) {
-                startActivity(new Intent(getApplicationContext(),MainActivity.class));
+                Intent intent=new Intent(fetchdata.this,MainActivity.class);
+                startActivity(intent);
+                finish();
+
             }
         });
+
 
 
         Cursor cursor=new dbmanager(this).readalldata();
