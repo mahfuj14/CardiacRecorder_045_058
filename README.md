@@ -5,8 +5,9 @@ An android app that helps a user to track his blood pressure and heart rate and 
 
 ## Authors
 
-- [@nadim1807045](https://www.github.com/nadim1807045)
 - [@mahfuj14](https://www.github.com/mahfuj14)
+- [@nadim1807045](https://www.github.com/nadim1807045)
+
 
 
 
